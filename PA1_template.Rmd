@@ -1,7 +1,7 @@
 ---
 title: "PA1_template.Rmd"
 author: "Charles Preston"
-date: "August 15, 2014"
+date: "August 17, 2014"
 ---
 
 Activity Monitoring Data Analysis
@@ -27,7 +27,7 @@ The variables included in this dataset are:
 activity<-read.csv("activity.csv")
 ```
 
-## What is mean total number of steps taken per day?
+## What is the mean total number of steps taken per day?
 * Make a histogram of the total number of steps taken each day
 ```{r}
 TotalStepsPerDay <- aggregate(steps ~ date, data = activity, sum)
